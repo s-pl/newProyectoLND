@@ -1,0 +1,283 @@
+[
+    {
+        "title": "Casa en Las Palmas, España",
+        "description": "Studio - 40m² - Max 2 people",
+        "image": "img/img1.webp",
+        "price": "150€ por noche",
+        "location": "Las Palmas, España"
+    },
+    {
+        "title": "Casa en Texas, EEUU",
+        "description": "Studio - 60m² - Max 3 people",
+        "image": "img/img2.webp",
+        "price": "200€ por noche",
+        "location": "Texas, EEUU"
+    },
+    {
+        "title": "Casa en Rio de Janeiro, Brasil",
+        "description": "Studio - 45m² - Max 2 people",
+        "image": "img/img3.webp",
+        "price": "180€ por noche",
+        "location": "Rio de Janeiro, Brasil"
+    },
+    {
+        "title": "Casa en Kyoto, Japón",
+        "description": "Studio - 35m² - Max 2 people",
+        "image": "img/img4.webp",
+        "price": "220€ por noche",
+        "location": "Kyoto, Japón"
+    },
+    {
+        "title": "Casa en Santorini, Grecia",
+        "description": "Studio - 50m² - Max 3 people",
+        "image": "img/img5.webp",
+        "price": "300€ por noche",
+        "location": "Santorini, Grecia"
+    },
+    {
+        "title": "Casa en París, Francia",
+        "description": "Studio - 55m² - Max 4 people",
+        "image": "img/img6.webp",
+        "price": "250€ por noche",
+        "location": "París, Francia"
+    },
+    {
+        "title": "Casa en Ciudad del Cabo, Sudáfrica",
+        "description": "Studio - 40m² - Max 2 people",
+        "image": "img/img7.webp",
+        "price": "180€ por noche",
+        "location": "Ciudad del Cabo, Sudáfrica"
+    },
+    {
+        "title": "Casa en Sídney, Australia",
+        "description": "Studio - 65m² - Max 4 people",
+        "image": "img/img8.webp",
+        "price": "275€ por noche",
+        "location": "Sídney, Australia"
+    },
+    {
+        "title": "Casa en Venecia, Italia",
+        "description": "Studio - 45m² - Max 2 people",
+        "image": "img/img9.webp",
+        "price": "230€ por noche",
+        "location": "Venecia, Italia"
+    },
+    {
+        "title": "Casa en Nueva York, EEUU",
+        "description": "Studio - 50m² - Max 3 people",
+        "image": "img/img10.webp",
+        "price": "350€ por noche",
+        "location": "Nueva York, EEUU"
+    },
+    {
+        "title": "Casa en Bali, Indonesia",
+        "description": "Studio - 55m² - Max 4 people",
+        "image": "img/img11.webp",
+        "price": "150€ por noche",
+        "location": "Bali, Indonesia"
+    },
+    {
+        "title": "Casa en Londres, Reino Unido",
+        "description": "Studio - 40m² - Max 2 people",
+        "image": "img/img12.webp",
+        "price": "300€ por noche",
+        "location": "Londres, Reino Unido"
+    },
+    {
+        "title": "Casa en Estocolmo, Suecia",
+        "description": "Studio - 35m² - Max 2 people",
+        "image": "img/img13.webp",
+        "price": "220€ por noche",
+        "location": "Estocolmo, Suecia"
+    },
+    {
+        "title": "Casa en Tokio, Japón",
+        "description": "Studio - 60m² - Max 3 people",
+        "image": "img/img14.webp",
+        "price": "400€ por noche",
+        "location": "Tokio, Japón"
+    },
+    {
+        "title": "Casa en Buenos Aires, Argentina",
+        "description": "Studio - 50m² - Max 3 people",
+        "image": "img/img16.webp",
+        "price": "150€ por noche",
+        "location": "Buenos Aires, Argentina"
+    },
+    {
+        "title": "Casa en Berlín, Alemania",
+        "description": "Studio - 55m² - Max 4 people",
+        "image": "img/img17.webp",
+        "price": "220€ por noche",
+        "location": "Berlín, Alemania"
+    },
+    {
+        "title": "Casa en Dubái, Emiratos Árabes Unidos",
+        "description": "Studio - 65m² - Max 5 people",
+        "image": "img/img18.webp",
+        "price": "500€ por noche",
+        "location": "Dubái, Emiratos Árabes Unidos"
+    },
+    {
+        "title": "Casa en Marrakech, Marruecos",
+        "description": "Studio - 40m² - Max 2 people",
+        "image": "img/img19.webp",
+        "price": "160€ por noche",
+        "location": "Marrakech, Marruecos"
+    },
+    {
+        "title": "Casa en Auckland, Nueva Zelanda",
+        "description": "Studio - 45m² - Max 2 people",
+        "image": "img/img20.webp",
+        "price": "250€ por noche",
+        "location": "Auckland, Nueva Zelanda"
+    },
+    
+    {
+        "title": "Casa en Los Ángeles, EEUU",
+        "description": "Studio - 70m² - Max 4 people",
+        "image": "img/img1.webp",
+        "price": "300€ por noche",
+        "location": "Los Ángeles, EEUU"
+    },
+    {
+        "title": "Casa en Florencia, Italia",
+        "description": "Studio - 50m² - Max 3 people",
+        "image": "img/img2.webp",
+        "price": "200€ por noche",
+        "location": "Florencia, Italia"
+    },
+    {
+        "title": "Casa en Seúl, Corea del Sur",
+        "description": "Studio - 40m² - Max 2 people",
+        "image": "img/img3.webp",
+        "price": "280€ por noche",
+        "location": "Seúl, Corea del Sur"
+    },
+    {
+        "title": "Casa en Praga, República Checa",
+        "description": "Studio - 45m² - Max 2 people",
+        "image": "img/img4.webp",
+        "price": "170€ por noche",
+        "location": "Praga, República Checa"
+    },
+    {
+        "title": "Casa en Montreal, Canadá",
+        "description": "Studio - 60m² - Max 3 people",
+        "image": "img/img5.webp",
+        "price": "210€ por noche",
+        "location": "Montreal, Canadá"
+    },
+    {
+        "title": "Casa en Hong Kong, China",
+        "description": "Studio - 35m² - Max 2 people",
+        "image": "img/img6.webp",
+        "price": "320€ por noche",
+        "location": "Hong Kong, China"
+    },
+    {
+        "title": "Casa en El Cairo, Egipto",
+        "description": "Studio - 55m² - Max 4 people",
+        "image": "img/img7.webp",
+        "price": "190€ por noche",
+        "location": "El Cairo, Egipto"
+    },
+    {
+        "title": "Casa en Oslo, Noruega",
+        "description": "Studio - 50m² - Max 3 people",
+        "image": "img/img8.webp",
+        "price": "260€ por noche",
+        "location": "Oslo, Noruega"
+    },
+    {
+        "title": "Casa en San Francisco, EEUU",
+        "description": "Studio - 45m² - Max 2 people",
+        "image": "img/img9.webp",
+        "price": "400€ por noche",
+        "location": "San Francisco, EEUU"
+    },
+    {
+        "title": "Casa en Cancún, México",
+        "description": "Studio - 60m² - Max 3 people",
+        "image": "img/img10.webp",
+        "price": "170€ por noche",
+        "location": "Cancún, México"
+    },
+    {
+        "title": "Casa en Vancouver, Canadá",
+        "description": "Studio - 65m² - Max 4 people",
+        "image": "img/img11.webp",
+        "price": "280€ por noche",
+        "location": "Vancouver, Canadá"
+    },
+    {
+        "title": "Casa en Zúrich, Suiza",
+        "description": "Studio - 40m² - Max 2 people",
+        "image": "img/img12.webp",
+        "price": "350€ por noche",
+        "location": "Zúrich, Suiza"
+    },
+    {
+        "title": "Casa en Lisboa, Portugal",
+        "description": "Studio - 50m² - Max 3 people",
+        "image": "img/img13.webp",
+        "price": "190€ por noche",
+        "location": "Lisboa, Portugal"
+    },
+    {
+        "title": "Casa en Mumbai, India",
+        "description": "Studio - 45m² - Max 2 people",
+        "image": "img/img14.webp",
+        "price": "160€ por noche",
+        "location": "Mumbai, India"
+    },
+    {
+        "title": "Casa en Chicago, EEUU",
+        "description": "Studio - 70m² - Max 4 people",
+        "image": "img/img20.webp",
+        "price": "350€ por noche",
+        "location": "Chicago, EEUU"
+    },
+    {
+        "title": "Casa en Viena, Austria",
+        "description": "Studio - 40m² - Max 2 people",
+        "image": "img/img16.webp",
+        "price": "230€ por noche",
+        "location": "Viena, Austria"
+    },
+    {
+        "title": "Casa en Estambul, Turquía",
+        "description": "Studio - 55m² - Max 4 people",
+        "image": "img/img17.webp",
+        "price": "180€ por noche",
+        "location": "Estambul, Turquía"
+    },
+    {
+        "title": "Casa en Bruselas, Bélgica",
+        "description": "Studio - 50m² - Max 3 people",
+        "image": "img/img18.webp",
+        "price": "200€ por noche",
+        "location": "Bruselas, Bélgica"
+    },
+    {
+        "title": "Casa en Bogotá, Colombia",
+        "description": "Studio - 60m² - Max 3 people",
+        "image": "img/img19.webp",
+        "price": "170€ por noche",
+        "location": "Bogotá, Colombia"
+    },
+    {
+        "title": "Casa en Bangkok, Tailandia",
+        "description": "Studio - 40m² - Max 2 people",
+        "image": "img/img20.webp",
+        "price": "150€ por noche",
+        "location": "Bangkok, Tailandia"
+    },
+    {
+        "title": "Casa en Popocatepetl, Bolivia",
+        "description": "Studio - 40m² - Max 2 people",
+        "image": "img/img18.webp",
+        "price": "100€ por noche",
+        "location": "Popocateptl, Bolivia"
+    }
+]

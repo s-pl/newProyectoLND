@@ -1,0 +1,167 @@
+
+ /* Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 600px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section {
+        padding: 10px 0;
+    }
+
+    .footer-bottom {
+        font-size: 0.7rem;
+    }
+    .properties {
+        grid-template-columns: repeat(1, 1fr); 
+    }
+    #container {
+        font-size: 20px;
+    }
+    #logo {
+        font-size: 20px;
+    }
+    .filters > div:first-child{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .filter-buttons{
+        display: grid;
+        grid-auto-flow: column; /*https://stackoverflow.com/questions/8184958/add-space-between-html-elements-only-using-css */
+        grid-column-gap: 10px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .close {
+        margin: 1px;
+        justify-content: end;
+    }
+    input[type="range"] {
+        
+        display: table-cell;
+        vertical-align: middle;
+        height: 50px;
+        
+      }
+      #total-days{
+        display: none;
+      }
+      
+ }
+
+
+ @media only screen and (min-width: 600px) {
+    .footer-content {
+        flex-wrap: nowrap;
+    }
+    .properties {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+    #container {
+        font-size: 20px;
+    }
+    #logo {
+        font-size: 20px;
+    }
+    .filters > div:first-child{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .filter-buttons{
+        display: grid;
+        grid-auto-flow: column; /*https://stackoverflow.com/questions/8184958/add-space-between-html-elements-only-using-css */
+        grid-column-gap: 10px;
+        width: 100%;
+        align-items: right;
+        
+        
+    }
+    input[type="range"] {
+        
+     
+        vertical-align: middle;
+        height: 50px;
+        width: 80vw;
+      }
+ }
+ 
+ /* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (min-width: 768px) {
+    .properties {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+    #container {
+        font-size: 20px;
+    }
+    #logo {
+        font-size: 30px;
+    }
+    .filters > div:first-child{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .filter-buttons{
+        display: grid;
+        grid-auto-flow: column; /*https://stackoverflow.com/questions/8184958/add-space-between-html-elements-only-using-css */
+        grid-column-gap: 10px;
+        width: 100%;
+        align-items: right;
+        
+        
+    }
+    input[type="range"] {
+        
+     
+        vertical-align: middle;
+        height: 50px;
+        width: 80vw;
+      }
+ }
+
+
+ /* Large devices (laptops/desktops, 992px and up) */
+ @media only screen and (min-width: 992px) {
+    .footer-content {
+        justify-content: space-around;
+    }
+
+    .footer-section {
+        flex: 0 0 25%;
+    }
+    .properties {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+    input[type="range"] {
+        
+     
+        vertical-align: middle;
+        height: 50px;
+        width: 90vw;
+      }
+ }
+ 
+ /* Extra large devices (large laptops and desktops, 1200px and up) */
+ @media only screen and (min-width: 1200px) {
+    .footer-section {
+        flex: 0 0 20%;
+    }
+    .properties {
+        grid-template-columns: repeat(4, 1fr); 
+    }
+    input[type="range"] {
+        
+     
+        vertical-align: middle;
+        height: 50px;
+        width: 95vw;
+      }
+ } 

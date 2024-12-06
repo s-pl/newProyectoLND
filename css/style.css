@@ -1,0 +1,322 @@
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+
+body {
+
+    font-family: "Poppins", sans-serif;
+
+    background-color: #f9f9f9;
+
+    color: #333;
+
+    line-height: 1.6;
+
+}
+
+
+
+/* Barra de navegación */
+
+.navbar {
+
+    background-color: #fff;
+
+    padding: 1rem 2rem;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    border-bottom: 1px solid #ddd;
+
+}
+
+
+
+.navbar a {
+
+    text-decoration: none;
+
+    color: #333;
+
+    margin: 0 0.5rem;
+
+}
+
+
+
+.navbar .logo {
+
+    font-weight: bold;
+
+    font-size: 1.5rem;
+
+    color: #ff5a5f;
+
+}
+
+/* Cesta */
+
+
+/* Filtros */
+
+.filters {
+
+    background-color: #fff;
+
+    padding: 1rem 2rem;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 1rem;
+
+    border-bottom: 1px solid #ddd;
+
+}
+
+
+
+.filters button {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    padding: 0.5rem 1rem;
+
+    border: 1px solid #ddd;
+
+    border-radius: 5px;
+
+    background-color: #fff;
+
+    cursor: pointer;
+
+}
+
+
+
+.filters button:hover {
+
+    background-color: #ff5a5f;
+
+    color: #fff;
+
+    border-color: #ff5a5f;
+
+}
+
+
+
+/* Propiedades */
+
+.properties {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas fijas */
+    gap: 1rem;
+    width: 100%;
+    padding: 2rem;
+}
+
+
+
+.property-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
+}
+
+.property-card:hover {
+    cursor: pointer;
+    
+}
+
+.property-card img {
+
+    width: 100%;
+    height: 250px; 
+    object-fit: cover;
+   
+
+}
+
+
+
+.property-card .details {
+
+    padding: 1rem;
+
+}
+
+
+
+.property-card .details h3 {
+
+    font-size: 1.2rem;
+
+    margin-bottom: 0.5rem;
+
+}
+
+
+
+.property-card .details p {
+
+    font-size: 0.9rem;
+
+    color: #555;
+
+    margin-bottom: 0.5rem;
+
+}
+
+
+
+.property-card .details .price {
+
+    font-weight: bold;
+
+    color: #ff5a5f;
+
+}
+
+
+.bi-heart {
+    margin-left: 9px;
+    font-size: 18px;
+    float: right;
+    transition: all .2s ease-in-out; 
+    fill: red;
+    
+}
+.bi-heart:hover {
+    color: red;
+    transform: scale(1.2);
+}
+
+/* Filtros */
+.filters {
+    background-color: #fff;
+    padding: 1rem 2rem;
+    display: flex; /* Usamos Flexbox */
+    justify-content: space-between; /* Para separar los dos bloques a los extremos */
+    align-items: center; /* Alineamos los items verticalmente */
+    gap: 1rem; /* Espacio entre los elementos */
+    border-bottom: 1px solid #ddd;
+}
+
+
+.filters > div:first-child {
+    display: flex;
+    align-items: center; 
+}
+
+
+.filters input[type="date"] {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    width: 150px; 
+    
+}
+
+
+.filters h4 {
+    margin: 0 1rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.filters button {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.filters button:hover {
+    background-color: #ff5a5f;
+    color: #fff;
+    border-color: #ff5a5f;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  width: 25rem;
+}
+
+/* Removes default focus */
+input[type="range"]:focus {
+  outline: none;
+}
+
+/******** Chrome, Safari, Opera and Edge Chromium styles ********/
+/* slider track */
+input[type="range"]::-webkit-slider-runnable-track {
+  background-color: #FF5A5F;
+  border-radius: 0.5rem;
+  height: 0.5rem;
+}
+
+/* slider thumb */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  margin-top: -4px; /* Centers thumb on the track */
+  background-color: #000000;
+  border-radius: 0.5rem;
+  height: 1rem;
+  width: 1rem;
+}
+
+input[type="range"]:focus::-webkit-slider-thumb {
+  outline: 3px solid #000000;
+  outline-offset: 0.125rem;
+}
+
+
+input[type="range"]::-moz-range-track {
+  background-color: #FF5A5F;
+  border-radius: 0.5rem;
+  height: 0.5rem;
+}
+
+
+input[type="range"]::-moz-range-thumb {
+  background-color: #000000;
+  border: none; /*Removes extra border that FF applies*/
+  border-radius: 0.5rem;
+  height: 1rem;
+  width: 1rem;
+}
+
+input[type="range"]:focus::-moz-range-thumb{
+  outline: 3px solid #000000;
+  outline-offset: 0.125rem;
+}
+
+

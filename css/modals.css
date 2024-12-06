@@ -1,0 +1,355 @@
+.modal {
+    overflow: hidden;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: left;
+}
+
+
+.close {
+    color: #aaa;
+    margin-left: 430px;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+.modal h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+
+.modal-field {
+    margin-bottom: 15px;
+}
+
+.modal-field label {
+    display: block;
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+
+.modal input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #333;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+}
+
+
+
+
+.modal h5 {
+    font-size: 14px;
+    color: #ff0000;
+    margin-bottom: 15px;
+}
+
+
+.modal button {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #ff5a5f;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+}
+
+#wishlist {
+    display: none;  /* Asegúrate de que esté oculto por defecto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+  
+  
+
+/* Estilo para el contenido del modal */
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-height: 80%;  /* Limita la altura máxima del modal */
+    overflow: hidden;  /* Evita que el contenido sobrepase el modal */
+    display: flex;
+    flex-direction: column;
+   
+}
+
+/* Estilo para el contenedor de la lista de deseos */
+#wishlist-container {
+    flex: 1;
+    overflow-y: auto;  /* Habilita el scroll si el contenido es grande */
+    max-height: 400px;  /* Altura máxima para la lista */
+    padding-right: 10px;  /* Añadir algo de espacio para el scroll */
+}
+
+
+#wishlist-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.wishlist-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    overflow: hidden;
+    transition:  box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .wishlist-card:hover {
+
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Encabezado de la tarjeta */
+  .wishlist-card-header {
+    display: flex;
+    align-items: flex-start;
+    padding: 15px;
+    gap: 15px;
+  }
+  
+  .wishlist-card-image {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    flex-shrink: 0;
+  }
+  
+  .wishlist-card-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .wishlist-card-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin: 0 0 8px;
+  }
+  
+  .wishlist-card-description {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+  }
+  
+  
+  .wishlist-card-footer {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-top: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .wishlist-card-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+  }
+  
+  .wishlist-card-price span {
+    font-size: 12px;
+    color: #888;
+  }
+  
+  .remove-from-wishlist {
+    background-color: #ff6b6b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .remove-from-wishlist:hover {
+    background-color: #e05a5a;
+  }
+  /* Estilo para el contenedor de la lista de reservas */
+#bookings-container {
+    flex: 1;
+    overflow-y: auto;  /* Habilita el scroll si el contenido es grande */
+    max-height: 400px;  /* Altura máxima para la lista */
+    padding-right: 10px;  /* Añadir algo de espacio para el scroll */
+}
+
+#bookings-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.bookings-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    overflow: hidden;
+    transition: box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bookings-card:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Encabezado de la tarjeta */
+.bookings-card-header {
+    display: flex;
+    align-items: flex-start;
+    padding: 15px;
+    gap: 15px;
+}
+
+.bookings-card-image {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.bookings-card-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bookings-card-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin: 0 0 8px;
+}
+
+.bookings-card-description {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+}
+
+.bookings-card-footer {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-top: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bookings-card-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+.bookings-card-price span {
+    font-size: 12px;
+    color: #888;
+}
+
+.remove-from-bookings {
+    background-color: #ff6b6b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.remove-from-bookings:hover {
+    background-color: #e05a5a;
+}

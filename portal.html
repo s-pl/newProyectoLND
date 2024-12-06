@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HabitatGo | Alquiler de casas de lujo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modals.css">
+    <link rel="stylesheet" href="css/wishlist-message.css">
+    <link rel="stylesheet" href="css/media-queries.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="register-modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h1>Formulario de registro</h1>
+      
+          <div class="modal-field">
+            <label for="first-name">Nombre</label>
+            <input type="text" id="first-name" name="first-name">
+            <label id="error-first-name" class="error-message" style="display: none; color: red;">Tienes que introducir un nombre.</label>
+          </div>
+      
+          <div class="modal-field">
+            <label for="last-name">Apellidos</label>
+            <input type="text" id="last-name" name="last-name">
+            <label id="error-second-name" class="error-message" style="display: none; color: red;">Tienes que introducir unos apellidos.</label>
+          </div>
+      
+          <div class="modal-field">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email">
+            <label id="error-email" class="error-message" style="display: none; color: red;">Tienes que introducir un email válido.</label>
+          </div>
+      
+          <div class="modal-field">
+            <label for="password">Contraseña</label>
+            <h5>Usa una contraseña de al menos 8 caracteres, con mayúscula, minúscula y un símbolo especial (ej. !, @, #, $, %, &)</h5>
+            <input type="password" id="password" name="password">
+            <label id="error-password" class="error-message" style="display: none; color: red;">La contraseña no cumple con los requisitos.</label>
+          </div>
+      
+          <div class="modal-footer">
+            <button type="submit" id="submit-register">Registrar</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="login-modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h1>Formulario de Log-In</h1>
+          <div class="modal-field">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="login-email" name="email">
+            <label id="login-error-email" class="error-message" style="display: none; color: red;">Tienes que introducir un email válido.</label>
+          </div>
+      
+          <div class="modal-field">
+            <label for="password">Contraseña</label>
+            <input type="password" id="login-password" name="password">
+            <label id="login-error-password" class="error-message" style="display: none; color: red;">La contraseña no cumple con los requisitos.</label>
+          </div>
+      
+          <div class="modal-footer">
+            <button type="submit" id="submit-login">Acceder</button>
+          </div>
+        </div>
+      </div>
+      
+      <div id="wishlist" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h1>Tu Lista de Deseos</h1>
+          <div id="wishlist-container">
+           
+            <p id="empty-wishlist" style="display: none; color: gray;">No tienes elementos en tu lista de deseos.</p>
+            <ul id="wishlist-items" style="list-style: none; padding: 0;">
+               
+                  
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+      <div id="bookings" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h1>Reservas Realizadas</h1>
+          <div id="bookings-container">
+           
+            
+            <ul id="bookings-items" style="list-style: none; padding: 0;">
+               
+                  
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+      
+
+      <nav class="navbar">
+        <div class="logo">HabitatGo</div>
+        
+        <div class="menu">
+            <a id="login-modal-opener" style="display: none;">Login</a>
+            <a id="register-modal-opener" style="display: none;">Registro</a>
+            <div id="container" style="display: none;">
+                <span id="bookings-viewer" style="margin-right: 10px; display: none;">Reservas</span>
+                <span id="wishlist-viewer" style="display: none;">Favoritos</span>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- Filtros -->
+    <div class="filters">
+        <div class="dates">
+            <h4>Del</h4>
+            <input type="date" id="first-date">
+            <h4>Al</h4>
+            <input type="date" id="second-date" onchange="calculateDays()">
+            <p style="margin-left: 10px;"><p id="total-days"></p></p>
+        </div>
+    
+        <div class="filter-buttons">
+            <button id="price-filter-btn">Precio</button>
+            
+            <button id="clear-filters-btn">Eliminar Filtros</button>
+        </div>
+    
+        
+        <div id="price-range" class="filter-panel" style="display: none;">
+            <label for="price-filter"><span id="price-value"></span>€</label>
+            <input type="range" id="price-filter" min="0" max="300" step="5" value="1">
+            
+        </div>
+    
+      
+    </div>
+    
+
+
+
+   
+
+    <div class="properties" id="house-list">
+
+
+        </div>
+
+
+
+        
+
+    </div>
+    <div id="message" class="wishlist-message">
+     
+
+      
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>HabitatGo</h3>
+            <p>Pagina realizada por <a href="https://www.github.com/s-pl">Samuel Ponce Luna</a>, alumno del IES El Rincón de 1 DAW.</p>
+        </div>
+        <div class="footer-section">
+            <h4>Mapa de la página</h4>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Propiedades</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Términos de servicio</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Inspiración</h4>
+          <ul>
+              <li><a href="https://www.airbnb.es/">AirBnB</a></li>
+              <li><a href="https://housinganywhere.com">HousingAnywhere</a></li>
+              <li><a href="https://www.booking.com/">Booking</a></li>
+          </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Herramientas utilizadas</h4>
+        <ul>
+            <li>HTML, CSS, JS</li>
+            <li><a href="https://firebase.google.com/?hl=es-419">Firebase</a></li>
+            <li><a href="https://vscode.dev/">Visual Studio Code</a></li>
+          
+        </ul>
+    </div>
+        <div class="footer-section">
+            <h4>Contacto</h4>
+            <p>Email: soporte@habitatgo.com</p>
+            <p>Teléfono: +34 123 456 789</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 HabitatGo. Todos los derechos reservados.</p>
+    </div>
+</footer>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        function calculateDays() {
+ 
+  const startDate = document.getElementById('first-date').value;
+  const endDate = document.getElementById('second-date').value;
+
+  if (startDate && endDate) {
+      
+      const start = new Date(startDate);
+      const end = new Date(endDate);
+
+      
+      const differenceInTime = end - start;
+
+    
+      const differenceInDays = differenceInTime / (1000 * 3600 * 24);
+
+    
+      if (differenceInDays < 0) {
+          document.getElementById('total-days').textContent = "La fecha de fin no puede ser anterior a la fecha de inicio.";
+      } else {
+          document.getElementById('total-days').textContent = "  " + differenceInDays + " dias";
+          localStorage.setItem('daysTravelling' , differenceInDays)
+      }
+  } else {
+      document.getElementById('total-days').textContent = "Por favor, selecciona ambas fechas.";
+  }
+}
+    </script>
+<script src="js/user-handler.js" type="module"></script>
+<script src="js/house-list.js" type="module"></script>
+<script src="js/is-logged.js"></script>
+<script src="js/filters-handler.js" type="module"></script>
+</body>
+
+</html>
